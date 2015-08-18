@@ -1,4 +1,4 @@
-[{oxstyle include=$oViewConf->getModuleUrl('jsnewcontact','out/css/contact.css')}]
+[{oxstyle include=$oViewConf->getModuleUrl('jsNewContact_OXID','out/css/contact.css')}]
 [{assign var="editval"  value=$oView->getUserData() }]
 [{assign var='oConfig'  value=$oViewConf->getConfig()}]
 [{assign var='bOpening' value=$oConfig->getConfigParam('bJsShowOpeningTime')}]

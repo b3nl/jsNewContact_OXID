@@ -1,9 +1,9 @@
 <?php
     /**
-     * Module-Metadata for the JS New Contact.
+     * Module-Metadata for the jsNewContact_OXID.
      * @author     jschuster <juliana.schuster@pixolith.de>
      * @category   modules
-     * @package    js_jsnewcontact
+     * @package    jsNewContact_OXID
      * @subpackage oxAutoload
      * @version    SVN: $Id$
      */
@@ -13,25 +13,25 @@
     $aModule = array(
         'author'      => 'Juliana Schuster',
         'description' => array(
-            'de' => 'neues Kontaktformular für den Oxid eshop',
-            'en' => 'new contact form for the oxid eshop'
+            'de' => 'Neues Kontaktformular für den OXID eShop',
+            'en' => 'New contact form for the OXID eShop'
         ),
         'email'       => 'juliana.schuster@pixolith.de',
-        'title'       => 'JS New Contact',
+        'title'       => 'jsNewContact_OXID',
         'version'     => '1.0',
-        'id'          => 'jsnewcontact',
+        'id'          => 'jsNewContact_OXID',
         'extend'      => array(
-            'contact' => 'jsnewcontact/controller/jsnewcontactcontroller',
+            'contact' => 'jsNewContact_OXID/controller/jsnewcontactcontroller',
         ),
         'templates'   => array(
-            'jsnewcontact_contact.tpl'      => 'jsnewcontact/views/jsnewcontact_contact.tpl',
-            'jsnewcontact_info_contact.tpl' => 'jsnewcontact/views/jsnewcontact_info_contact.tpl',
-            'jsnewcontact_notice.tpl'       => 'jsnewcontact/views/jsnewcontact_notice.tpl',
-            'jsnewcontact_spam.tpl'         => 'jsnewcontact/views/jsnewcontact_spam.tpl',
-            'jsnewcontact_phoneservice.tpl' => 'jsnewcontact/views/jsnewcontact_phoneservice.tpl'
+            'jsnewcontact_contact.tpl'      => 'jsNewContact_OXID/views/jsnewcontact_contact.tpl',
+            'jsnewcontact_info_contact.tpl' => 'jsNewContact_OXID/views/jsnewcontact_info_contact.tpl',
+            'jsnewcontact_notice.tpl'       => 'jsNewContact_OXID/views/jsnewcontact_notice.tpl',
+            'jsnewcontact_spam.tpl'         => 'jsNewContact_OXID/views/jsnewcontact_spam.tpl',
+            'jsnewcontact_phoneservice.tpl' => 'jsNewContact_OXID/views/jsnewcontact_phoneservice.tpl'
         ),
         'files'       => array(
-            'jsnewcontacthandledatabase' => 'jsnewcontact/controller/jsnewcontacthandledatabase.php'
+            'jsnewcontacthandledatabase' => 'jsNewContact_OXID/controller/jsnewcontacthandledatabase.php'
         ),
         'events'      => array(
             'onActivate'   => 'jsnewcontacthandledatabase::onActivate',

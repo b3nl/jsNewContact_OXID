@@ -1,5 +1,5 @@
-[{oxstyle include=$oViewConf->getModuleUrl('jsnewcontact','out/css/contact.css')}]
-[{oxscript include=$oViewConf->getModuleUrl('jsnewcontact','out/js/jsnewcontactphoneservice.js')}]
+[{oxstyle include=$oViewConf->getModuleUrl('jsNewContact_OXID','out/css/contact.css')}]
+[{oxscript include=$oViewConf->getModuleUrl('jsNewContact_OXID','out/js/jsnewcontactphoneservice.js')}]
 [{capture append="oxidBlock_content"}]
 [{assign var='oConfig'  value=$oViewConf->getConfig()}]
 [{assign var='bOpening' value=$oConfig->getConfigParam('bJsShowOpeningTime')}]
@@ -30,6 +30,12 @@
         [{/if}]
         [{if $bOpening}]
         [{oxcontent ident="openingHours"}]
+        [{/if}]
+
+        [{assign var='oConfig'  value=$oViewConf->getConfig()}]
+        [{if $oConfig->getConfigParam('bJsShowReturnCall')}]
+        <button id="jsPhone">kostenloser Rückrufservice</button>
+        [{include file="jsnewcontact_phoneservice.tpl"}]
         [{/if}]
     </ul>
 

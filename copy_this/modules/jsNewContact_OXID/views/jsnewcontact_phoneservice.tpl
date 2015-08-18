@@ -1,5 +1,5 @@
-[{oxstyle include=$oViewConf->getModuleUrl('jsnewcontact','out/css/contact.css')}]
-[{oxscript include=$oViewConf->getModuleUrl('jsnewcontact','out/js/jsnewcontactphoneservice.js')}]
+[{oxstyle include=$oViewConf->getModuleUrl('jsNewContact_OXID','out/css/contact.css')}]
+[{oxscript include=$oViewConf->getModuleUrl('jsNewContact_OXID','out/js/jsnewcontactphoneservice.js')}]
 <div style="display:none;" id="dialog-form" title="[{ oxmultilang ident="JS_NEWCONTACT_PHONE_HEADER"}]">
 <section js data-stage="prepare">
     <p>Nennen Sie und Ihre Telefonnummer und Ihren Namen, wir rufen Sie gerne an.</p>
@@ -51,7 +51,7 @@
 </section>
 <section js data-stage="send" class="loading">
     <p>Ihre Eingaben werden übertragen, bitte gedulden Sie sich einen Augenblick ...</p></br>
-    <img src="../modules/jsnewcontact/out/img/ajax-loader2.gif" alt="loading-image">
+    <img src="../modules/jsNewContact_OXID/out/img/ajax-loader2.gif" alt="loading-image">
 </section>
 <section js data-stage="exit" style="display: none;">
     <!-- Ajax return status messages -->

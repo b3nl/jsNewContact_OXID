@@ -101,7 +101,7 @@
                 $sOnlyMessage = nl2br(oxRegistry::getConfig()->getRequestParameter('c_message'));
 
             $aSpamwords = $this->getConfig()->getConfigParam('aJsSpamProtection');
-            if($aSpamwords) {
+            if($aSpamwords == 0) {
                 foreach ($aSpamwords as $sSpamword) {
                     $sSpamwordToLower = strtolower($sSpamword);
                     if (strpos(strtolower($sSubject),
@@ -272,7 +272,7 @@
             } else {
                 $sCallbackTime = $sNoContent;
             }
-            if($aSpamwords) {
+            if($aSpamwords == 0) {
                 foreach ($aSpamwords as $sSpamword) {
                     $sSpamwordToLower = strtolower($sSpamword);
                     if (strpos(strtolower($sCallback),
