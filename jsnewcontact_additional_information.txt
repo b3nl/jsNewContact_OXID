@@ -1,0 +1,16 @@
+Additional Information:
+
+• You can place the returncall-button anywhere you like.
+  For this case you place this code snippet in your template:
+
+  [{assign var='oConfig'  value=$oViewConf->getConfig()}]
+  [{if $oConfig->getConfigParam('bJsShowReturnCall')}]
+  <button id="jsPhone">[{ oxmultilang ident="JS_NEWCONTACT_BUTTON_RETURNCALL"}]</button>
+  [{include file="jsnewcontact_phoneservice.tpl"}]
+  [{/if}]
+
+• You can edit the CMS-Snippet for he opening time when you navigate to 
+  Customer Info -> CMS Pages and search for ident openingHours.
+  There you can then add you HTML in the textbox.
+
+• When you dont want to show this Snippet, you need to deactivate it in the module 

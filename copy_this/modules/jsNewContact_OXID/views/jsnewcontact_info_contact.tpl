@@ -34,7 +34,7 @@
 
         [{assign var='oConfig'  value=$oViewConf->getConfig()}]
         [{if $oConfig->getConfigParam('bJsShowReturnCall')}]
-        <button id="jsPhone">kostenloser Rückrufservice</button>
+        <button id="jsPhone">[{ oxmultilang ident="JS_NEWCONTACT_BUTTON_RETURNCALL"}]</button>
         [{include file="jsnewcontact_phoneservice.tpl"}]
         [{/if}]
     </ul>
