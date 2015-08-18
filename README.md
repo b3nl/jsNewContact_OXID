@@ -20,3 +20,8 @@ jsNewContact is an OXID eShop module which extends the contact page from OXID.
 - You can decide the E-mail address to which the call-back request has to be sent
 - Additional you can see on which site the request has been sent
 - After successful post,spam or error the user gets a message in the Popup
+
+# Installation
+1.Copy what you find in copy_this to the root folder of your OXID eShop installation
+2.Empty the folder /tmp/ of your OXID eShop installation (except of the .htaccess file
+3.Go to the admin panel of your OXID eShop installation and activate the module
