@@ -7,7 +7,7 @@ Layout
 ============
 ![Image alt](https://github.com/JulianaSchuster/jsNewContact_OXID/blob/master/contact_page.png)
 
-[Image alt](https://github.com/JulianaSchuster/jsNewContact_OXID/blob/master/backend.png)
+![Image alt](https://github.com/JulianaSchuster/jsNewContact_OXID/blob/master/backend.png)
 
 
 Features Contact Form
