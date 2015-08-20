@@ -1,8 +1,22 @@
-    <?php
+<?php
+    /**
+     * ./modules/jsNewContact_OXID/translations/de/jsnewcontact_lang.php
+     * @author     Juliana Schuster <juliana.schuster@pixolith.de>
+     * @category   modules
+     * @package    jsNewContact_OXID
+     * @subpackage translations
+     * @version    SVN: $Id$
+     */
 
-// -------------------------------
-// RESOURCE IDENTIFIER = STRING
-// -------------------------------
+    /**
+     * German language file.
+     * @author     Juliana Schuster <juliana.schuster@pixolith.de>
+     * @category   modules
+     * @package    jsNewContact_OXID
+     * @subpackage translations
+     * @version    SVN: $Id$
+     */
+
     return $aLang = array(
         'charset'                            => 'UTF-8',
         'JS_NEWCONTACT_NOTE_FOR_FORM'        => 'Bitte alle Felder die mit einem * gekennzeichnet sind ausfüllen',

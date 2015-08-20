@@ -1,4 +1,21 @@
 <?php
+    /**
+     * ./modules/jsNewContact_OXID/views7admin/en/module_options.php
+     * @author     Juliana Schuster <juliana.schuster@pixolith.de>
+     * @category   modules
+     * @package    jsNewContact_OXID
+     * @subpackage views_admin
+     * @version    SVN: $Id$
+     */
+
+    /**
+     * English language file.
+     * @author     Juliana Schuster <juliana.schuster@pixolith.de>
+     * @category   modules
+     * @package    jsNewContact_OXID
+     * @subpackage views_admin
+     * @version    SVN: $Id$
+     */
 
     return $aLang = array(
         'charset'                                     => 'UTF-8',
