@@ -31,7 +31,7 @@ Features Callback-Function
 - The user will be notified of whether or not their call-back request was sent successfully
 
 
-###Installation
+Installation
 ============
 1. Copy what you find in copy_this to the root folder of your OXID eShop installation
 2. Empty the folder /tmp/ of your OXID eShop installation (except of the .htaccess file
