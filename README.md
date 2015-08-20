@@ -1,7 +1,8 @@
-jsNewContact_OXID
+OXID jsNewContact
 ============
 jsNewContact is an OXID eShop module which extends the contact page from OXID.
 
+![Image alt](contact_page.png)
 
 Features Contact Form
 ============
