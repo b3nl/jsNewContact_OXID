@@ -1,12 +1,12 @@
-###OXID jsNewContact
+OXID jsNewContact
 ============
 jsNewContact is an OXID eShop module which extends the contact page from OXID.
 
-Layout
+###Layout
 ============
 ![Image alt](https://github.com/JulianaSchuster/jsNewContact_OXID/blob/master/copy_this/modules/jsNewContact_OXID/contact_page.png)
 
-Features Contact Form
+###Features Contact Form
 ============
 - No captcha field anymore
 - Black-list based spam-filter
@@ -18,7 +18,7 @@ Features Contact Form
 - Activatable CMS-content for the store opening times integrable
 
 
-Features Callback-Function
+###Features Callback-Function
 ============
 - Activatable callback-button which can be placed everywhere in the shop
 - For customers who have indicate their name and phone number, the fields are filled automatically
@@ -29,7 +29,7 @@ Features Callback-Function
 - The user will be notified of whether or not their call-back request was sent successfully
 
 
-Installation
+###Installation
 ============
 1. Copy what you find in copy_this to the root folder of your OXID eShop installation
 2. Empty the folder /tmp/ of your OXID eShop installation (except of the .htaccess file
