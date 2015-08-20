@@ -13,4 +13,4 @@ Additional Information:
   Customer Info -> CMS Pages and search for ident openingHours.
   There you can then add you HTML in the textbox.
 
-• When you dont want to show this Snippet, you need to deactivate it in the module 
+• If you dont want to show this Snippet, you need to deactivate it in the module 
