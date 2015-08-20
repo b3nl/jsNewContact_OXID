@@ -17,7 +17,7 @@
             'en' => 'New contact form for the OXID eShop'
         ),
         'email'       => 'juliana.schuster@pixolith.de',
-        'title'       => 'jsNewContact_OXID',
+        'title'       => 'OXID jsNewContact',
         'version'     => '1.0',
         'thumbnail'   => 'js_logo.png',
         'id'          => 'jsNewContact_OXID',
