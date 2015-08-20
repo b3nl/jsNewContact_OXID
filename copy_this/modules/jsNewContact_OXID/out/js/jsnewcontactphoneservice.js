@@ -1,3 +1,21 @@
+/**
+ * ./modules/jsNewContact_OXID/out/js/jsnewcontactphoneservice.js
+ * @author     Juliana Schuster <juliana.schuster@pixolith.de>
+ * @category   modules
+ * @package    jsNewContact_OXID
+ * @subpackage out_js
+ * @version    SVN: $Id$
+ */
+
+/**
+ * Javascript file
+ * @author     Juliana Schuster <juliana.schuster@pixolith.de>
+ * @category   modules
+ * @package    jsNewContact_OXID
+ * @subpackage out_js
+ * @version    SVN: $Id$
+ */
+
 $(function () {
     var dialog 	= null;
     var form 	= null;

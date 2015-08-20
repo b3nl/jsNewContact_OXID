@@ -101,7 +101,7 @@
                 $sOnlyMessage = nl2br(oxRegistry::getConfig()->getRequestParameter('c_message'));
 
             $aSpamwords = $this->getConfig()->getConfigParam('aJsSpamProtection');
-            if($aSpamwords == 0) {
+            if ($aSpamwords == 0) {
                 foreach ($aSpamwords as $sSpamword) {
                     $sSpamwordToLower = strtolower($sSpamword);
                     if (strpos(strtolower($sSubject),
@@ -255,6 +255,12 @@
             $oDb->execute($sql);
         }
 
+        /**
+         * Composes and sends the call-back form, returns false if some parameters
+         * are missing.
+         *
+         * @return bool
+         */
         public function send_email()
         {
             $aParams    = oxRegistry::getConfig()->getRequestParameter('editval');
@@ -264,15 +270,12 @@
             $activeView = oxRegistry::getConfig()->getRequestParameter('view');
             $sNoContent = "Keine Angabe";
 
-            // Testing
-	    sleep(2);
-
             if ($sCallback) {
                 $sCallbackTime = $sCallback;
             } else {
                 $sCallbackTime = $sNoContent;
             }
-            if($aSpamwords == 0) {
+            if ($aSpamwords == 0) {
                 foreach ($aSpamwords as $sSpamword) {
                     $sSpamwordToLower = strtolower($sSpamword);
                     if (strpos(strtolower($sCallback),
@@ -292,10 +295,21 @@
                 "Wann sollen wir Sie zurückrufen? : " . $sCallbackTime . "\n" .
                 "Die Anfrage wurde von dieser Seite aus gesendet : " . $activeView;
 
-            $bSuccess = mail($sMail, 'Rückrufanfrage von ' . $aParams['oxuser_oxfnameandlname'], $callbackMessage ,"Mime-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: quoted-printable");
+            $bSuccess = mail($sMail, 'Rückrufanfrage von ' . $aParams['oxuser_oxfnameandlname'], $callbackMessage,
+                "Mime-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: quoted-printable");
+
             $this->return_json(["success" => $bSuccess, "spam" => 0]);
         }
 
+        /**
+         * Outputs a JSON-encoded string to the browser and
+         * prevents the template from rendering. This function
+         * can only be called once.
+         * Returns true if everythnig went okay.
+         * Returns false if the function had already been called in the past.
+         *
+         * @return bool
+         */
         protected function return_json($aParam)
         {
             if ($this->_blJsonOut) {
@@ -314,5 +328,6 @@
             $this->_sThisTemplate = "";
 
             echo json_encode($aParam);
+            return true;
         }
-    }
+    };

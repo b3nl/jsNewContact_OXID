@@ -51,7 +51,7 @@
 </section>
 <section js data-stage="send" class="loading">
     <p>Ihre Eingaben werden übertragen, bitte gedulden Sie sich einen Augenblick ...</p></br>
-    <img src="../modules/jsNewContact_OXID/out/img/ajax-loader2.gif" alt="loading-image">
+    <img src="../modules/jsNewContact_OXID/out/img/ajax-loader.gif" alt="loading-image">
 </section>
 <section js data-stage="exit" style="display: none;">
     <!-- Ajax return status messages -->

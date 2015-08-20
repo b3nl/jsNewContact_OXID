@@ -1,12 +1,12 @@
 <?php
 
     /**
-     * Main controller for the snippet
+     * Main controller for the opening time snippet
      */
     class jsnewcontacthandledatabase
     {
         /**
-         * Module activation script: executes the sql to create the snippet.
+         * Module activation script: executes the sql to create the opening time snippet.
          */
         public static function onActivate()
         {
@@ -22,7 +22,7 @@
         }
 
         /**
-         * Module deactivation script: executes the sql to delte the snippet.
+         * Module deactivation script: executes the sql to delte the opening time snippet.
          */
         public static function onDeactivate()
         {
@@ -32,5 +32,4 @@
             $oDb->execute($delete_sql);
             return true;
         }
-
-    }
+    };

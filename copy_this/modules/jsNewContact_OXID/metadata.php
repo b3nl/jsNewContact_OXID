@@ -1,4 +1,5 @@
 <?php
+
     /**
      * Module-Metadata for the jsNewContact_OXID.
      * @author     jschuster <juliana.schuster@pixolith.de>
