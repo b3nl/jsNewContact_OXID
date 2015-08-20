@@ -19,6 +19,7 @@
         'email'       => 'juliana.schuster@pixolith.de',
         'title'       => 'jsNewContact_OXID',
         'version'     => '1.0',
+        'thumbnail'   => 'js_logo.png',
         'id'          => 'jsNewContact_OXID',
         'extend'      => array(
             'contact' => 'jsNewContact_OXID/controller/jsnewcontactcontroller',
