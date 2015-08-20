@@ -18,6 +18,7 @@ Features Contact Form
 - After sending the form, a clearer success message appears
 - Nicer distribution of the contact page and many optical corrections
 - Activatable CMS-content for the store opening times integrable
+- You can customize the css as you wish
 
 
 Features Callback-Function
