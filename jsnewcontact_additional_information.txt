@@ -8,6 +8,8 @@ Additional Information:
   <button id="jsPhone">[{ oxmultilang ident="JS_NEWCONTACT_BUTTON_RETURNCALL"}]</button>
   [{include file="jsnewcontact_phoneservice.tpl"}]
   [{/if}]
+  
+• The messages from the contact- and callback form may end up in the spam folder of your mailbox
 
 • You can edit the CMS-Snippet for he opening time when you navigate to 
   Customer Info -> CMS Pages and search for ident openingHours.
