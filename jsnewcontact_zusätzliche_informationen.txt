@@ -1,15 +1,17 @@
-Zusätzliche Informationen:
+ZusÃ¤tzliche Informationen:
 
-• Sie können den Rückruf-button überall positionieren.Hierfür müssen Sie nur diesen Codeausschnitt in ihr Template einfügen:
+â€¢ Sie kÃ¶nnen den RÃ¼ckruf-Button Ã¼berall positionieren.HierfÃ¼r mÃ¼ssen Sie nur diesen Codeausschnitt in ihr Template einfÃ¼gen:
 
   [{assign var='oConfig'  value=$oViewConf->getConfig()}]
   [{if $oConfig->getConfigParam('bJsShowReturnCall')}]
   <button id="jsPhone">[{ oxmultilang ident="JS_NEWCONTACT_BUTTON_RETURNCALL"}]</button>
   [{include file="jsnewcontact_phoneservice.tpl"}]
   [{/if}]
-									
-• Sie können die CMS-Seite für die Öffnungszeiten bearbeiten indem die zu 
+  
+â€¢ Die Nachrichten vom Kontakt- und RÃ¼ckrufformular landen hÃ¶chwahrscheinlich im Spam-Ordner Ihres Postfaches
+	
+â€¢ Sie kÃ¶nnen die CMS-Seite fÃ¼r die Ã–ffnungszeiten bearbeiten indem die zu 
  Kundeninformationen -> CMS-Seiten navigieren und nach den Ident openingHours suchen.
- Dort können Sie Ihr HTML in die Textbox einfügen
+ Dort kÃ¶nnen Sie Ihr HTML in die Textbox einfÃ¼gen
 
-• Wenn Sie die Öffnungszeiten deaktivieren wollen, müssen sie dies über das Modul tun 
+â€¢ Wenn Sie die Ã–ffnungszeiten deaktivieren wollen, mÃ¼ssen sie dies Ã¼ber das Modul tun 
